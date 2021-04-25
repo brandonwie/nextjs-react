@@ -43,6 +43,8 @@ A workspace for the Udemy course, [Next.js & React - The Complete Guide](https:/
 
 ![Routing Example](./screenshots/routing.png?raw=true 'Routing Example')
 
+---
+
 ### `useRouter`
 
 ```typescript
@@ -69,6 +71,8 @@ export default PortfolioProjectPage;
 ```
 
 Check out more usage in the [documentation](https://nextjs.org/docs/api-reference/next/router)
+
+---
 
 ## Building Nested Dynamic Routes
 
@@ -100,3 +104,45 @@ Console Output on `http://localhost:3000/clients/max/project11`</br>
 <img src="./screenshots/clients-console.jpg" width="45%" alt="Clients Console Output">
 
 We can use all theses files names and structure as a router structure. 👍
+
+---
+
+## Catch-All Routes
+
+1. Create `blog/` dir in `pages/` dir, create a file named `[...something].tsx`
+
+2. `localhost:3000/blog/ANYTHING/FROM/HERE/IS/CAUGHT` in `router.query` as:
+
+   ```console
+   { something: ["ANYTHING", "FROM", "HERE", "IS", "CAUGHT"]
+     __proto__: Object
+   ```
+
+3. You can utilize it
+
+---
+
+## Navigate with "Link" Component
+
+```typescript
+// index.tsx
+import Link from 'next/link';
+
+const HomePage: React.FC = (): JSX.Element => {
+  return (
+    <div>
+      <h1>The Home Page</h1>
+      <ul>
+        <li>
+          <Link href='/portfolio'>Portfolio</Link>
+        </li>
+        <li>
+          <Link href='/clients'>Clients</Link>
+        </li>
+      </ul>
+    </div>
+  );
+};
+
+export default HomePage;
+```
