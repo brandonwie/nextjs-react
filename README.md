@@ -1,12 +1,12 @@
 # Next.js & React
 
-A workspace for the Udemy course, [Next.js & React - The Complete Guide](https://www.udemy.com/course/nextjs-react-the-complete-guide/) using a custom TypeScript setting (the course is conducted using JS)
-
 <a href="https://nextjs.org/"><img src="https://cdn.worldvectorlogo.com/logos/nextjs-3.svg" height="48" alt="Next.js Logo"></a> <a href="https://reactjs.org/"><img src="https://cdn.worldvectorlogo.com/logos/react-1.svg" height="48"><a href="https://www.typescriptlang.org/"></a> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png" alt="TypeScript Logo" width="48"/></a>
+
+A workspace for the Udemy course, [Next.js & React - The Complete Guide](https://www.udemy.com/course/nextjs-react-the-complete-guide/) using a custom TypeScript setting (the course is conducted using JS)
 
 ---
 
-# Development Note
+## Development Note 🟡
 
 ## Installation (TypeScript specific)
 
@@ -30,8 +30,9 @@ A workspace for the Udemy course, [Next.js & React - The Complete Guide](https:/
 
 4. Then, run next (normally `npm run dev` or `yarn dev`)
 
-5. You're now ready to start converting files from .js to .tsx and leveraging the benefits of TypeScript!.
+5. You're now ready to start converting files from .js to .tsx and leveraging the benefits of TypeScript!
 
+**Course Outline**
 ![Course Outline](./screenshots/outline.jpg?raw=true 'Course Outline')
 
 ---
@@ -98,4 +99,4 @@ export default SelectedClientProjectPage;
 Console Output on `http://localhost:3000/clients/max/project11`</br>
 <img src="./screenshots/clients-console.jpg" width="45%" alt="Clients Console Output">
 
-We can use all theses files names and structure as a router structure.
+We can use all theses files names and structure as a router structure. 👍
