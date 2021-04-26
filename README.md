@@ -70,7 +70,7 @@ const PortfolioProjectPage: React.FC = (): JSX.Element => {
 export default PortfolioProjectPage;
 ```
 
-Check out more usage in the [documentation](https://nextjs.org/docs/api-reference/next/router)
+Check out more usage of the `useRouter` in the [documentation](https://nextjs.org/docs/api-reference/next/router)
 
 ---
 
@@ -145,4 +145,25 @@ const HomePage: React.FC = (): JSX.Element => {
 };
 
 export default HomePage;
+```
+
+---
+
+## Different Ways of Setting Link Hrefs
+
+```typescript
+<Link
+  href={{
+    pathname: '/clients/[id]',
+    query: { id: client.id },
+  }}
+>
+  {client.name}
+</Link>
+```
+
+OR
+
+```typescript
+<Link href={`clients/${client.id}`}>{client.name}</Link>
 ```
