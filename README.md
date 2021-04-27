@@ -33,15 +33,16 @@ A workspace for the Udemy course, [Next.js & React - The Complete Guide](https:/
 5. You're now ready to start converting files from .js to .tsx and leveraging the benefits of TypeScript!
 
 **Course Outline**
-![Course Outline](./screenshots/outline.jpg?raw=true 'Course Outline')
+
+<img src="./screenshots/outline.jpg" alt="Routing Example" width="80%">
 
 ---
 
-## Structure
+## 1. Pages & File-based Routing
 
 ### Routing
 
-![Routing Example](./screenshots/routing.png?raw=true 'Routing Example')
+<img src="./screenshots/routing.png" alt="Routing Example" width="80%">
 
 ---
 
@@ -74,7 +75,7 @@ Check out more usage of the `useRouter` in the [documentation](https://nextjs.or
 
 ---
 
-## Building Nested Dynamic Routes
+### Building Nested Dynamic Routes
 
 File Structure</br>
 <img src="./screenshots/clients-file-structure.jpg" width="45%" alt="Clients File Structure">
@@ -107,7 +108,7 @@ We can use all theses files names and structure as a router structure. 👍
 
 ---
 
-## Catch-All Routes
+### Catch-All Routes
 
 1. Create `blog/` dir in `pages/` dir, create a file named `[...something].tsx`
 
@@ -122,7 +123,7 @@ We can use all theses files names and structure as a router structure. 👍
 
 ---
 
-## Navigate with "Link" Component
+### Navigate with "Link" Component
 
 ```typescript
 // index.tsx
@@ -149,7 +150,7 @@ export default HomePage;
 
 ---
 
-## Different Ways of Setting Link Hrefs
+### Different Ways of Setting Link Hrefs
 
 ```typescript
 <Link
@@ -167,3 +168,15 @@ OR
 ```typescript
 <Link href={`clients/${client.id}`}>{client.name}</Link>
 ```
+
+- Passing an object in `href` seems easier to read
+
+---
+
+### Adding Custom 404 Page
+
+Create `404.tsx` inside `page/` folder
+
+### Summary
+
+<img src="./screenshots/comparison.jpg" alt="File-based Code-based comparison" width="80%">
